@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap" rel="stylesheet" type="text/css">
+    <!--<link rel="stylesheet" href="ionicons.min.css" type="text/css">-->
+    <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+     <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Dice Game</title>
+</head>
+<body>
+    <div class="row">
+     <div class="rules-tab">
+         <h3>rules</h3>
+        <ul>
+            <li>The game has 2 players, playing in rounds</li>
+            <li>In each turn, a player rolls both dice as many times as player wishes ,Each result get added to the ROUND score</li>
+            <li>BUT.... If player roll dices and get 1 in any one dice, all ROUND scores gets lost. </li>
+            <li>Now, its second player's turn</li>
+            <li>The player can choose to 'hold' ,which means ROUND score get added to GLOBAL score , then it's next player's turn</li>
+            <li>The first player to reach GOAL points  on GLOBAL score wins the game.</li>
+        </ul>
+        <label for="name">Set the goal</label>
+        <input type="text" id="input-goal">
+     </div>
+   
+
+    
+    <div class="wrapper clearfix">
+          <div class="player-0-panel active"> 
+               <div class="player-name" id="player-0">player 1</div>
+               <div class="player-score" id="score-0">43</div>
+               <div class="box">
+                   <div class="current-label">Current</div> 
+                   <div class="current-score" id="current-0">11</div>
+               </div>
+          </div>
+
+          <div class="player-1-panel">
+               <div class="player-name" id="player-1">player 2</div>
+               <div class="player-score" id="score-1">72</div>
+               <div class="box">
+                   <div class="current-label">current</div>
+                   <div class="current-score" id="current-1">0</div>
+               </div>
+          </div>  
+           <button class="btn-1">
+                <i class="ion-ios-plus-outline"></i>
+                New game
+           </button>    
+           <button class="btn-roll">
+               <i class="ion-ios-loop"></i>
+               Roll dice
+           </button>
+           <button class="btn-hold">
+               <i class="ion-ios-download-outline"></i>
+              Hold
+           </button>
+           
+               <img src="dice-5.png" alt="dice-5" class="img-dice">
+               <img src="dice-4.png" alt="dice-4" class="img-dice-2">
+    </div>
+    </div>
+    
+    <!--<script src="singledice.js"></script>-->
+    <script src="doubledice.js"></script>
+    
+</body>
+</html>
